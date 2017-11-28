@@ -43,7 +43,8 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index)
+    value = current_player(board)
+    move(board, index, value)
     display_board(board)
   else
     puts "invalid input"
@@ -124,3 +125,9 @@ def winner(board)
   end
 end
 
+def play(board)
+  puts ""
+  until over?(board)
+    turn(board)
+  end
+end
