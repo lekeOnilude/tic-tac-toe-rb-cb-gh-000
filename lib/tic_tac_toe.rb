@@ -132,6 +132,6 @@ def play(board)
   if won?(board) != false
     puts "Congratulations #{winner(board)}!"
   else
-    puts "The grame as a draw"
+    puts "Cat's Game!"
   end
 end
