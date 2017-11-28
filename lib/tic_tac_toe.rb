@@ -129,5 +129,9 @@ def play(board)
   until over?(board)
     turn(board)
   end
-  won? != false ? puts "congratulation played #{winner(board)}" : puts "The grame as a draw"
+  if won? != false
+    puts "congratulation played #{winner(board)}"
+  else
+    puts "The grame as a draw"
+  end
 end
