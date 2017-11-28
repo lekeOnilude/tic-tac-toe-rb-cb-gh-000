@@ -130,7 +130,7 @@ def play(board)
     turn(board)
   end
   if won?(board) != false
-    puts "congratulation played #{winner(board)}"
+    puts "Congratulations #{winner(board)}!"
   else
     puts "The grame as a draw"
   end
